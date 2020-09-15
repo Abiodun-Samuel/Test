@@ -31,9 +31,11 @@
    <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css" integrity="sha256-EneUNJCn3+sXSETLhbsZ2n4fcj596X+p5x3bA72mH7M=" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" />
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <!-- ========== Custom StyleSheet ========== -->
    <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -41,8 +43,6 @@
 <body data-spy="scroll" data-target="#navie" data-offset="100">
    <!-- scroll progress bar indicator -->
    <progress max="100" value="0"></progress>
-
-   <!-- ========== Header Section Begins Here ========== -->
    <header id="header">
       <nav id="navie" class="navbar navbar-expand-md fixed-top">
          <div class="container">
@@ -108,16 +108,22 @@
          </div>
       </nav>
    </header>
+
+    <div class="scrollContainer">
+       <!-- ========== Header Section Begins Here ========== -->
+    
    <!-- ========== Header Section Ends Here ========== -->
 
-   <main  id="fullpage">
+   <main class="body-scroll" id="fullpage">
+     
       
       <!-- ========== Intro Section Begins Here ========== -->
       <div id="intro" class="section intro pb-3">
+         
          <div class="container">
             <div class="row">
                <div class="col-md-6">
-                  <div
+                  <div 
                      class="intro-box">
                      <h4>
                         Lorem ipsum dolor sit amet consectetur adipisicing
@@ -347,7 +353,7 @@
             </div>
 
             <div class="row mt-5 mb-5">
-                <div 
+                <div  
                   class=" col-lg-6 col-md-6  mt-3 mb-3">
                   <div class="card hover-border-blue pt-3">
                      <div class="icon">
@@ -871,8 +877,14 @@
       <!-- ========== Testimonial Section Ends Here ========== -->
 
 
-       <!-- ========== Footer Section Begins Here ========== -->
-    <footer class="section fp-auto-height"  id="footer">
+     
+   </main >
+    
+
+    </div>
+
+      <!-- ========== Footer Section Begins Here ========== -->
+    <footer class="section footer fp-auto-height"  id="footer">
       <div class="container">
          <div class="row">
             <div class="col-lg-4 col-md-6 mb-4">
@@ -967,12 +979,7 @@
     </footer>
    <!-- ========== Footer Section Ends Here ========== -->
     
-   </main >
-    
   
-
-
-
    <!-- ========== Back to the top button ========== -->
    <div class="back-top">
       <i class="fas fa-arrow-alt-circle-up"></i>
@@ -994,21 +1001,27 @@
 
    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" ></script>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script> -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js" integrity="sha256-p4OuLeAtmp2jz4BehPUj4k7TIllujbqDopoQKaSdsVo=" crossorigin="anonymous"></script>
 
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/scrolloverflow.min.js" integrity="sha512-pYyQWhzi2lV+RM4GmaUA56VPL48oLVvsHmP9tuQ8MaZMDHomVEDjXXnfSVKXayy+wLclKPte0KbsuVoFImtE7w==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/scrolloverflow.min.js" ></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.js" integrity="sha512-eH2N2Zt2AeLuFlFvRSEeZcVeAESY+8nfIqhxx0XXEou6w/G4lLY3K8UKNYqi6e1pLXDduVF1KF/lbyxy3+X6OA==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/easings.min.js" integrity="sha512-SrKslwu6IjHEo/8mAOtkoUOT3MzHCEOFWktrC8BNtjPuBBYLYjg1y/Marat34uYfOfxDMLEwy8DLArWEVc2i+w==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/easings.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <!-- main jquery-script file -->
-   <script src="js/jquery-script.js"></script>
+  <script src="js/jquery-script.js"></script>
 
    <!-- main  javascript file -->
    <script src="js/script.js"></script>

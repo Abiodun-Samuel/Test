@@ -1,16 +1,4 @@
-new fullpage("#fullpage", {
-  //options here
-  autoScrolling: true,
-  scrollHorizontally: true,
-  scrollOverflow: true,
-  anchors: ["firstPage", "secondPage"],
-  navigation: true,
-  navigationPosition: "right",
-  navigationTooltips: ["firstSlide", "secondSlide"],
-  showActiveTooltip: false,
-  slidesNavigation: false,
-  slidesNavPosition: "bottom",
-});
+
 
 // drawer menu
 function myDrawer() {
@@ -66,4 +54,11 @@ gsap.to("progress", {
   value: 100,
   ease: "none",
   scrollTrigger: { scrub: 0.3 },
+});
+
+const scroll = new LocomotiveScroll({
+  el: document.querySelector(".scrollContainer"),
+  smooth: true,
+  smoothMobile: true,
+  touchMultiplier: 4,
 });

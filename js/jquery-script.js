@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
   // bootstrap scrollspy
   $("body").scrollspy({ target: "#navie" });
@@ -54,6 +53,10 @@ $(document).ready(function () {
         items: 3,
       },
     },
+  });
+
+  $(function () {
+    FastClick.attach(document.body);
   });
 
   // matchheight
